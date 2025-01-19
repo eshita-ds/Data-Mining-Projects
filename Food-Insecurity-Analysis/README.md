@@ -6,8 +6,9 @@
 ## 🎯 Objective
 - Identify key indicators influencing food insecurity based on four pillars: **Availability, Access, Utilization, and Stability.**
   
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/f28bf03d-d3cb-44b5-be44-7fe686b61244" />
-- Develop the Food Insecurity Severity Index (FISI) as a composite metric.
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/ffb78a0c-e470-40ed-bc2c-8ae15eb55ced" />
+
+- Develop the **Food Insecurity Severity Index (FISI)** as a composite metric.
 - Analyze trends, patterns, and anomalies in food security indicators.
 - Provide region-specific recommendations for mitigating food insecurity.
 - Provide actionable insights to aid policy decisions and strengthen governmental and external programs.
@@ -31,7 +32,7 @@
   
 **Feature Engineering - FISI Development:** Calculated FISI scores by aggregating weighted normalized values of indicators (0 = best security; 1 = worst insecurity).
 
-<img width="468" alt="image" src="https://github.com/user-attachments/assets/bfce3804-141c-4ad2-a620-490379a5fd74" />
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/f1558d25-3745-48a5-86ae-a6a4f201ecba" />
 
 - Risk Categories:<br>
         - Low Risk (FISI ≤ 0.5),<br>
@@ -44,15 +45,16 @@
 
 ## 🌟 Key Insights
 - South Asia and Sub-Saharan Africa show the highest FISI scores, indicating severe food insecurity.
- <img width="586" alt="image" src="https://github.com/user-attachments/assets/942a7a9a-0659-4e1d-8c01-62a7c79602c5" /><br>
+  
+<img width="605" alt="image" src="https://github.com/user-attachments/assets/3fe683ff-7370-4cf9-9f5a-bdfdd3f0ad13" /><br>
 - Access and utilization of resources are critical; availability alone is insufficient.
 - Political stability and economic strength significantly impact food insecurity levels.
 - Improved food security in regions like Somalia due to effective interventions.
 - Highlighted the negative impacts of political instability, climate change, and high refugee populations on food security.
 
 ## 🚀 Results
-- FISI: A scalable metric categorizing countries into low, medium, and high-risk zones.
-- Recommendation: Enhance agricultural productivity.
+- **FISI**: A scalable metric categorizing countries into low, medium, and high-risk zones.
+- **Recommendation**: Enhance agricultural productivity.
         - Focus on improving resource access and governance.
         - Mitigate risks from extreme weather and political instability.
 - Visualized food insecurity trends and identified actionable insights for targeted interventions.
@@ -70,19 +72,19 @@
 
 ## 📁 File Structure
 **Folders:**
-- WDI_CSV_2024_09_25 - Original Dataset extracted from World Bank Development Indicators
-- staging_data - Intermediate Dataset
-- ne_110m_admin_0_countries - Helper files for Geopandas mapping
-- clean_data - Final Dataset ready for analysis
+- `WDI_CSV_2024_09_25` - Original Dataset extracted from World Bank Development Indicators
+- `staging_data` - Intermediate Dataset
+- `ne_110m_admin_0_countries` - Helper files for Geopandas mapping
+- `clean_data` - Final Dataset ready for analysis
   
 **Notebooks:**
-- 1_data_collection.ipynb - This NB processes and filters World Bank country data and the indicators to extract relevant information for analysis, focusing on countries with valid region data.
-- 2_EDA_beforeImputation.ipynb - This NB conducts exploratory data analysis (EDA) on global indicators, focusing on identifying patterns, outlier detection and performing univariate analysis before impuattion. 
-- 3_imputation.ipynb - This NB handles missing data imputation for global indicators, applying predefined strategies. 
-- 4_EDA_clean_data.ipynb - This NB conducts EDA on the clean data on global indicators, and conducted univariate analysis after impuation.
-- 5_FISI_Indexes.ipynb - This notebook calculates the Food Insecurity severity index based on the 4 pillars and its corresponding indexes. Analyzed FISI over the years for trends and patterns, alongwith with deriving additional indexes.
-- 6_clustering.ipynb - This NB performs clustering to uncover natural groupings in countries. Explored the clusters formed and visualised the data with PCA.
-- 
+- `1_data_collection.ipynb` - This NB processes and filters World Bank country data and the indicators to extract relevant information for analysis, focusing on countries with valid region data.
+- `2_EDA_beforeImputation.ipynb` - This NB conducts exploratory data analysis (EDA) on global indicators, focusing on identifying patterns, outlier detection and performing univariate analysis before impuattion. 
+- `3_imputation.ipynb` - This NB handles missing data imputation for global indicators, applying predefined strategies. 
+- `4_EDA_clean_data.ipynb` - This NB conducts EDA on the clean data on global indicators, and conducted univariate analysis after impuation.
+- `5_FISI_Indexes.ipynb` - This notebook calculates the Food Insecurity severity index based on the 4 pillars and its corresponding indexes. Analyzed FISI over the years for trends and patterns, alongwith with deriving additional indexes.
+- `6_clustering.ipynb` - This NB performs clustering to uncover natural groupings in countries. Explored the clusters formed and visualised the data with PCA.
+
 **Presentation:** FoodInsecurity_project.pptx
   
 ## 🙌 Acknowledgements 
