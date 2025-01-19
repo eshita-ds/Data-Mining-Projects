@@ -1,0 +1,15 @@
+• Gender: male(1) or female(0)
+• Age: Age of the patient
+• Current Smoker: whether or not the patient is a current smoker 
+• Cigs Per Day: the number of cigarettes that the person smoked on average in one day
+• BP Meds: whether or not the patient was on blood pressure medication 
+• Prevalent Stroke: whether or not the patient had previously had a stroke 
+• Prevalent Hyp: whether or not the patient was hypertensive 
+• Diabetes: whether or not the patient had diabetes 
+• Tot Chol: total cholesterol level 
+• Sys BP: systolic blood pressure
+• Dia BP: diastolic blood pressure 
+• BMI: Body Mass Index 
+• Heart Rate: heart rate 
+• Glucose: glucose level 
+• TenYearCHD: 10 year risk of coronary heart disease (1 means Yes, 0 means No)
