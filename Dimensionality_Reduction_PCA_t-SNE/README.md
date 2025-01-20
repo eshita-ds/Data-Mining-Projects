@@ -2,66 +2,71 @@
 
 This repository contains the implementation of Principal Component Analysis (PCA) and t-Distributed Stochastic Neighbor Embedding (t-SNE) from scratch, showcasing key dimensionality reduction techniques, emphasizing on their mathematical foundations and practical applications.
 
-## Overview
-
-**Dataset**
+## Dataset
 
 The dataset used in this work is fashion_mnist1.csv, which consists of:
 
 10,000 rows and 785 columns: Each row represents a grayscale image of a fashion item (28x28 pixels flattened into 784 features) with a corresponding label (10 classes).
 The goal is to reduce the data's dimensionality for visualization and image compression while retaining meaningful information.
 
-**Objectives**
+## Files
 
-**1. PCA Implementation:**
+### 1. Principal Component Analysis `Gupta-Bonus-PCA.ipynb`
+- Implements PCA using Singular-Value Decomposition (SVD).
+- Tasks:
+  - Decomposition of 1st and 2nd principal components and projecting data.
+  - Visualizing 2D projections with color-coded labels.
+  - Image compression using PCA with varying ranks (**k = 2, 5, 10**).
 
-- Reduce the dataset's dimensionality using Singular-Value Decomposition (SVD).
-- Project data onto principal components for 2D visualization.
-- Compress images using varying numbers of principal components.
+### 2. t-SNE (t-Distributed Stochastic Neighbor Embedding) `Gupta-Bonus-TSNE.ipynb`
 
-**2. t-SNE Implementation:**
+- This notebook implements **t-Distributed Stochastic Neighbor Embedding (t-SNE)** from scratch using the mathematical formulation with detailed explanation.
+- Key Features:
+  - **Custom t-SNE Algorithm**:
+    - Similarity computations (high-dimensional and low-dimensional space).
+    - Gradient descent for optimizing embedding.
+ - Visualize high-dimensional data in 2D by preserving local structure.
+ - 2D visualization of the reduced data with labeled clusters.
+  - **Hyperparameter Tuning**:
+    - Evaluated five configurations, varying learning rate, perplexity, momentum, and initialization.
+    - Results are assessed with metrics:
+      - **D**: Distance among centroids to measure cluster separation.
+      - **J**: Objective function quantifying clustering quality.
+  - **Comprehensive Plots**:
+    - 2D projections are visualized for each hyperparameter setting, showcasing clustering variations.
 
-- Build the t-SNE algorithm from scratch using the mathematical formulation with detailed explanation.
-- Visualize high-dimensional data in 2D by preserving local structure.
-- Experiment with hyperparameters to evaluate their impact.
 
-## Implementation Details
+## Requirements
 
-**1. Principal Component Analysis (PCA)**
+Ensure the following Python libraries are installed:
+- **NumPy**
+- **Pandas**
+- **Matplotlib**
+- **SVD library** (for PCA tasks)
 
-**Key Steps:**
+## Usage
 
-1. Data Normalization:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/eshita-ds/Data-Mining-Projects/tree/main/Dimensionality_Reduction_PCA_t-SNE
+   ```
+2. Open and run the Jupyter notebooks:
+   - `Gupta-Bonus-PCA.ipynb`
+   - `Gupta-Bonus-TSNE.ipynb`
+3. Refer to markdown cells within the notebooks for detailed explanations and results.
 
-    - Standardize the dataset to ensure all features have zero mean and unit variance.
-  
-2. SVD for PCA:
+## Insights
+This work demonstrates:
+- The effectiveness of PCA for linear dimensionality reduction and data compression.
+- The power of t-SNE in non-linear dimensionality reduction and visualizing high-dimensional data in 2D space.
+- The impact of hyperparameters on clustering and visualization outcomes.
 
-    - Decompose the covariance matrix into singular vectors and values.
-    - Compute the top principal components.
-  
-3. 2D Projection:
+Feel free to explore and contribute!
 
-    - Project the data onto the first two principal components.
-    - Visualize the reduced 2D data with a scatter plot, where each label (class) is represented with a different color.
-  
-4. Image Compression:
+--------
 
-    - Select 10 images (one per label).
-    - Compress images by retaining k=2, 5, 10 principal components.
-    - Reconstruct the compressed images and compare them to the originals.
-    
-**Results:**
-  
-- **2D Scatter Plot**: Demonstrates class separability using the first two principal components.
-- **Image Compression**: Visualizes how increasing the number of principal components improves the reconstructed image quality.
 
-**2. t-SNE (t-Distributed Stochastic Neighbor Embedding)**
-  
-**Key Steps:** 
 
-**1. Pairwise Similarity Computation:**
-
-Compute the conditional probabilities P(j∣i) based on Gaussian kernels in the high-dimensional space:
+ 
 
   
