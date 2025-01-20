@@ -57,3 +57,7 @@ This repository implements a **Logistic Regression model** from scratch to predi
 ## 🚀 How to Run
 - Clone the repository and place the datasets (heart_disease_train.csv and heart_disease_test.csv) in the folder.
 - Open `Cardiovascular_Risk_Prediction - Hyper Parameter Tuning.ipynb` or `Cardiovascular_Risk_Prediction_with_LR_and_SMOTE.ipynb` and execute cells sequentially.
+
+# License
+
+This project is for educational purposes only and adheres to the academic integrity policies of DATA 240.
