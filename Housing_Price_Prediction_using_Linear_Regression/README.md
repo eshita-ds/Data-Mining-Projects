@@ -69,5 +69,6 @@ The objective of linear regression is to minimize the cost function. Gradient De
 - Download housing.csv and place it in the project folder.
 - Run the Jupyter Notebook `Housing Price Prediction using Linear Regression.ipynb` step-by-step.
 
+## License
 
-
+This project is for educational purposes only and adheres to the academic integrity policies of DATA 240.
